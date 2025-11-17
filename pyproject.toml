@@ -1,6 +1,6 @@
 [project]
-name = "droot"
-version = "0.1.0"
+name = "droots"
+version = "0.1.1"
 description = "Generate structured Python project folders instantly"
 authors = [{ name = "Caleb M. Sibanda", email = "darkian.dev@gmail.com" }]
 readme = "README.md"

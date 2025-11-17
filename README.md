@@ -1,6 +1,6 @@
 # Droot
 
-*Droot* (short for **Darkian Root**) is a Python project scaffolding tool designed to help developers quickly bootstrap new Python applications with a clean, consistent, and well-organized project structure — which I call the **Droot-type project structure**.
+**Droot** (short for **Darkian Root**) is a Python project scaffolding tool designed to help developers quickly bootstrap new Python applications with a clean, consistent, and well-organized project structure — which I call the **Droot-type project structure**.
 
 ## Why Droot?
 

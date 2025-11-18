@@ -1,11 +1,8 @@
 from importlib import import_module
-<<<<<<< HEAD
-from pathlib import Path
-=======
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)
+from typing import NoReturn
 import argparse
 import unittest
-import utils
+from . import utils # Change to: import utils
 import time
 
 def retrieve_tests(one_mod: str | None = None) -> unittest.TestCase:
@@ -50,7 +47,7 @@ def render_trace(result: unittest.TestResult) -> None:
             print(traceback)
             if "\n" not in traceback: print()
 
-def run_tests(test_cls: list[type] | None = None) -> None:
+def run_tests(test_cls: list[type]|None = None) -> NoReturn:
     runner        = unittest.TextTestRunner()
     suite, start  = test_suite(test_cls), time.time()
     result, end   = runner.run(suite),    time.time()   
@@ -89,8 +86,4 @@ if __name__ == "__main__":
     if not utils.any_in(utils.sys.argv, eq=mods.keys()
         ): utils.helper(skip=len(utils.sys.argv) - 1)
 
-<<<<<<< HEAD
     run_tests(mods[parser.parse_args().command or "None"])
-=======
-    run_tests(mods[parser.parse_args().command or "None"])
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)

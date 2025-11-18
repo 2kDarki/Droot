@@ -3,10 +3,6 @@ from typing import Any
 from math import inf
 import unicodedata
 import shutil
-<<<<<<< HEAD
-import time
-=======
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)
 import sys
 import re
 import os
@@ -155,8 +151,4 @@ def any_in(*args, eq: Any | None = None) -> bool:
             
     for arg in args: 
         if arg in eq: return True
-<<<<<<< HEAD
-    return False 
-=======
     return False
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)

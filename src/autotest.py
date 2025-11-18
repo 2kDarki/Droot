@@ -1,8 +1,4 @@
 from importlib import import_module
-<<<<<<< HEAD
-from pathlib import Path
-=======
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)
 import argparse
 import unittest
 import utils
@@ -89,8 +85,4 @@ if __name__ == "__main__":
     if not utils.any_in(utils.sys.argv, eq=mods.keys()
         ): utils.helper(skip=len(utils.sys.argv) - 1)
 
-<<<<<<< HEAD
     run_tests(mods[parser.parse_args().command or "None"])
-=======
-    run_tests(mods[parser.parse_args().command or "None"])
->>>>>>> 05f2ae0 (Fixed folder structure, missing entry point in PyPI, and inconsistent naming)
